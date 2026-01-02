@@ -1,0 +1,42 @@
+{
+  "redundant_false_columns": {
+    "count": 16,
+    "features": [
+      "call_wall_compression_False",
+      "gamma_flip_strike_high_vs_hist_False",
+      "gamma_flip_strike_low_vs_hist_False",
+      "gamma_flip_strike_not_near_False",
+      "gamma_valley_False",
+      "max_call_wall_strike_high_vs_hist_False",
+      "max_call_wall_strike_low_vs_hist_False",
+      "max_call_wall_strike_not_near_False",
+      "min_put_wall_strike_high_vs_hist_False",
+      "min_put_wall_strike_low_vs_hist_False",
+      "min_put_wall_strike_not_near_False",
+      "neutral_gex_False",
+      "neutral_zone_False",
+      "put_wall_compression_False",
+      "short_gamma_expansion_False",
+      "wall_to_wall_compression_False"
+    ]
+  },
+  "low_variance_features": {
+    "count": 2,
+    "features": [
+      "neutral_zone_True",
+      "strategy_stock_only"
+    ]
+  },
+  "high_correlation_features": {
+    "count": 8,
+    "features": [
+      "entry_cost",
+      "gamma_flip_strike",
+      "gamma_flip_strike_low_vs_hist_True",
+      "max_call_wall_strike_high_vs_hist_True",
+      "min_put_wall_strike",
+      "min_put_wall_strike_low_vs_hist_True",
+      "trade_type_short"
+    ]
+  }
+}

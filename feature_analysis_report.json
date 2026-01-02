@@ -1,0 +1,581 @@
+Correlation Matrix
+------------------------------------------------------------
+                                        trade_id    signal  entry_cost  \
+trade_id                                1.000000  0.011342    0.111246   
+signal                                  0.011342  1.000000    0.059307   
+entry_cost                              0.111246  0.059307    1.000000   
+exit_cost                              -0.111227 -0.059361   -0.999990   
+pnl                                     0.017538 -0.014422   -0.017632   
+label                                  -0.002227  0.005965    0.007295   
+net_gex                                 0.028888 -0.002509   -0.025680   
+z20_net_gex                            -0.001678  0.004555    0.003716   
+gamma_flip_strike                      -0.119038  0.072922    0.170918   
+gamma_flip_strike_perc                  0.011481 -0.083554   -0.022886   
+gamma_flip_strike_perc_exp_mean        -0.052083 -0.076536   -0.086927   
+max_call_wall_strike                   -0.120548  0.075262    0.172132   
+max_call_wall_strike_perc              -0.052808 -0.007251    0.007911   
+max_call_wall_strike_perc_exp_mean     -0.216438  0.079947   -0.016193   
+min_put_wall_strike                    -0.118460  0.072320    0.170955   
+min_put_wall_strike_perc                0.033021 -0.083069    0.005116   
+min_put_wall_strike_perc_exp_mean       0.070683 -0.042498    0.014363   
+trade_type_long                         0.179213  0.031283    0.860150   
+trade_type_short                       -0.179213 -0.031283   -0.860150   
+neutral_gex_True                        0.005370 -0.003036    0.020492   
+gamma_flip_strike_low_vs_hist_True     -0.023196  0.029765   -0.006280   
+gamma_flip_strike_high_vs_hist_True     0.022828 -0.029335    0.006191   
+gamma_flip_strike_not_near_True        -0.008869  0.013634   -0.013929   
+max_call_wall_strike_low_vs_hist_True  -0.016752  0.010005   -0.019919   
+max_call_wall_strike_high_vs_hist_True  0.016720 -0.009969    0.019909   
+max_call_wall_strike_not_near_True     -0.044698  0.003959   -0.008494   
+min_put_wall_strike_low_vs_hist_True   -0.027378  0.048201   -0.013514   
+min_put_wall_strike_high_vs_hist_True   0.027346 -0.048164    0.013504   
+min_put_wall_strike_not_near_True      -0.039346  0.021391   -0.017172   
+call_wall_compression_True              0.055542 -0.008150    0.054989   
+put_wall_compression_True               0.019628 -0.008839   -0.000197   
+short_gamma_expansion_True              0.018378 -0.011390   -0.017134   
+gamma_valley_True                      -0.042467  0.046604   -0.023285   
+wall_to_wall_compression_True          -0.014036  0.036541    0.043124   
+
+                                        exit_cost       pnl     label  \
+trade_id                                -0.111227  0.017538 -0.002227   
+signal                                  -0.059361 -0.014422  0.005965   
+entry_cost                              -0.999990 -0.017632  0.007295   
+exit_cost                                1.000000  0.014515 -0.010003   
+pnl                                      0.014515  1.000000  0.856741   
+label                                   -0.010003  0.856741  1.000000   
+net_gex                                  0.025699  0.004310 -0.002723   
+z20_net_gex                             -0.003748  0.002004  0.001874   
+gamma_flip_strike                       -0.170917 -0.108529  0.005029   
+gamma_flip_strike_perc                   0.022855  0.014569  0.007017   
+gamma_flip_strike_perc_exp_mean          0.086915  0.039154 -0.003743   
+max_call_wall_strike                    -0.172135 -0.108579  0.005059   
+max_call_wall_strike_perc               -0.007945 -0.003169  0.002184   
+max_call_wall_strike_perc_exp_mean       0.016145 -0.020328  0.000354   
+min_put_wall_strike                     -0.170955 -0.107798  0.005332   
+min_put_wall_strike_perc                -0.005116  0.010109  0.002613   
+min_put_wall_strike_perc_exp_mean       -0.014379  0.011179  0.001409   
+trade_type_long                         -0.860150 -0.002189  0.009661   
+trade_type_short                         0.860150  0.002189 -0.009661   
+neutral_gex_True                        -0.020491  0.001023 -0.000703   
+gamma_flip_strike_low_vs_hist_True       0.006295 -0.004440 -0.008616   
+gamma_flip_strike_high_vs_hist_True     -0.006206  0.004483  0.008767   
+gamma_flip_strike_not_near_True          0.013937 -0.001358 -0.004300   
+max_call_wall_strike_low_vs_hist_True    0.019924 -0.004529 -0.003414   
+max_call_wall_strike_high_vs_hist_True  -0.019914  0.004508  0.003386   
+max_call_wall_strike_not_near_True       0.008481  0.003368  0.000861   
+min_put_wall_strike_low_vs_hist_True     0.013520 -0.006083 -0.007114   
+min_put_wall_strike_high_vs_hist_True   -0.013510  0.006061  0.007086   
+min_put_wall_strike_not_near_True        0.017154  0.001965  0.003308   
+call_wall_compression_True              -0.054939 -0.006014 -0.007537   
+put_wall_compression_True                0.000197  0.012933  0.005756   
+short_gamma_expansion_True               0.017105  0.002244  0.000639   
+gamma_valley_True                        0.023240  0.004045  0.004166   
+wall_to_wall_compression_True           -0.043109 -0.006149  0.003089   
+
+                                         net_gex  z20_net_gex  \
+trade_id                                0.028888    -0.001678   
+signal                                 -0.002509     0.004555   
+entry_cost                             -0.025680     0.003716   
+exit_cost                               0.025699    -0.003748   
+pnl                                     0.004310     0.002004   
+label                                  -0.002723     0.001874   
+net_gex                                 1.000000     0.414295   
+z20_net_gex                             0.414295     1.000000   
+gamma_flip_strike                      -0.051911     0.016838   
+gamma_flip_strike_perc                 -0.563932    -0.286613   
+gamma_flip_strike_perc_exp_mean        -0.060195     0.031512   
+max_call_wall_strike                   -0.034709     0.023611   
+max_call_wall_strike_perc              -0.251971    -0.177119   
+max_call_wall_strike_perc_exp_mean      0.043838     0.007698   
+min_put_wall_strike                    -0.050331     0.017093   
+min_put_wall_strike_perc               -0.448234    -0.250188   
+min_put_wall_strike_perc_exp_mean      -0.080652     0.029955   
+trade_type_long                        -0.018148    -0.001410   
+trade_type_short                        0.018148     0.001410   
+neutral_gex_True                        0.041237     0.012312   
+gamma_flip_strike_low_vs_hist_True      0.533110     0.309382   
+gamma_flip_strike_high_vs_hist_True    -0.532951    -0.309504   
+gamma_flip_strike_not_near_True        -0.066442    -0.040394   
+max_call_wall_strike_low_vs_hist_True   0.275839     0.200382   
+max_call_wall_strike_high_vs_hist_True -0.275826    -0.200382   
+max_call_wall_strike_not_near_True     -0.252410    -0.213991   
+min_put_wall_strike_low_vs_hist_True    0.386830     0.242763   
+min_put_wall_strike_high_vs_hist_True  -0.386816    -0.242763   
+min_put_wall_strike_not_near_True       0.396216     0.264208   
+call_wall_compression_True              0.479851     0.281247   
+put_wall_compression_True               0.226355     0.084985   
+short_gamma_expansion_True             -0.533351    -0.242297   
+gamma_valley_True                       0.170009     0.064374   
+wall_to_wall_compression_True           0.036237     0.011366   
+
+                                        gamma_flip_strike  \
+trade_id                                        -0.119038   
+signal                                           0.072922   
+entry_cost                                       0.170918   
+exit_cost                                       -0.170917   
+pnl                                             -0.108529   
+label                                            0.005029   
+net_gex                                         -0.051911   
+z20_net_gex                                      0.016838   
+gamma_flip_strike                                1.000000   
+gamma_flip_strike_perc                           0.024149   
+gamma_flip_strike_perc_exp_mean                 -0.231792   
+max_call_wall_strike                             0.997373   
+max_call_wall_strike_perc                        0.039979   
+max_call_wall_strike_perc_exp_mean               0.069799   
+min_put_wall_strike                              0.996056   
+min_put_wall_strike_perc                         0.065426   
+min_put_wall_strike_perc_exp_mean                0.066632   
+trade_type_long                                  0.064957   
+trade_type_short                                -0.064957   
+neutral_gex_True                                -0.021309   
+gamma_flip_strike_low_vs_hist_True              -0.029328   
+gamma_flip_strike_high_vs_hist_True              0.029328   
+gamma_flip_strike_not_near_True                 -0.056256   
+max_call_wall_strike_low_vs_hist_True            0.029682   
+max_call_wall_strike_high_vs_hist_True          -0.029682   
+max_call_wall_strike_not_near_True              -0.043844   
+min_put_wall_strike_low_vs_hist_True            -0.028135   
+min_put_wall_strike_high_vs_hist_True            0.028135   
+min_put_wall_strike_not_near_True               -0.005230   
+call_wall_compression_True                       0.035336   
+put_wall_compression_True                       -0.037848   
+short_gamma_expansion_True                      -0.044682   
+gamma_valley_True                               -0.079634   
+wall_to_wall_compression_True                    0.016881   
+
+                                        gamma_flip_strike_perc  ...  \
+trade_id                                              0.011481  ...   
+signal                                               -0.083554  ...   
+entry_cost                                           -0.022886  ...   
+exit_cost                                             0.022855  ...   
+pnl                                                   0.014569  ...   
+label                                                 0.007017  ...   
+net_gex                                              -0.563932  ...   
+z20_net_gex                                          -0.286613  ...   
+gamma_flip_strike                                     0.024149  ...   
+gamma_flip_strike_perc                                1.000000  ...   
+gamma_flip_strike_perc_exp_mean                       0.150584  ...   
+max_call_wall_strike                                 -0.002673  ...   
+max_call_wall_strike_perc                             0.447269  ...   
+max_call_wall_strike_perc_exp_mean                    0.097953  ...   
+min_put_wall_strike                                   0.010489  ...   
+min_put_wall_strike_perc                              0.578468  ...   
+min_put_wall_strike_perc_exp_mean                     0.074950  ...   
+trade_type_long                                       0.004387  ...   
+trade_type_short                                     -0.004387  ...   
+neutral_gex_True                                     -0.022852  ...   
+gamma_flip_strike_low_vs_hist_True                   -0.757916  ...   
+gamma_flip_strike_high_vs_hist_True                   0.757916  ...   
+gamma_flip_strike_not_near_True                      -0.010136  ...   
+max_call_wall_strike_low_vs_hist_True                -0.321703  ...   
+max_call_wall_strike_high_vs_hist_True                0.321703  ...   
+max_call_wall_strike_not_near_True                    0.312460  ...   
+min_put_wall_strike_low_vs_hist_True                 -0.448333  ...   
+min_put_wall_strike_high_vs_hist_True                 0.448333  ...   
+min_put_wall_strike_not_near_True                    -0.329774  ...   
+call_wall_compression_True                           -0.432992  ...   
+put_wall_compression_True                            -0.057209  ...   
+short_gamma_expansion_True                            0.484334  ...   
+gamma_valley_True                                    -0.343247  ...   
+wall_to_wall_compression_True                        -0.051900  ...   
+
+                                        max_call_wall_strike_high_vs_hist_True  \
+trade_id                                                              0.016720   
+signal                                                               -0.009969   
+entry_cost                                                            0.019909   
+exit_cost                                                            -0.019914   
+pnl                                                                   0.004508   
+label                                                                 0.003386   
+net_gex                                                              -0.275826   
+z20_net_gex                                                          -0.200382   
+gamma_flip_strike                                                    -0.029682   
+gamma_flip_strike_perc                                                0.321703   
+gamma_flip_strike_perc_exp_mean                                      -0.118428   
+max_call_wall_strike                                                 -0.021165   
+max_call_wall_strike_perc                                             0.725600   
+max_call_wall_strike_perc_exp_mean                                   -0.111748   
+min_put_wall_strike                                                  -0.029598   
+min_put_wall_strike_perc                                              0.162474   
+min_put_wall_strike_perc_exp_mean                                    -0.063060   
+trade_type_long                                                       0.043024   
+trade_type_short                                                     -0.043024   
+neutral_gex_True                                                      0.062463   
+gamma_flip_strike_low_vs_hist_True                                   -0.339274   
+gamma_flip_strike_high_vs_hist_True                                   0.339166   
+gamma_flip_strike_not_near_True                                       0.067340   
+max_call_wall_strike_low_vs_hist_True                                -0.999976   
+max_call_wall_strike_high_vs_hist_True                                1.000000   
+max_call_wall_strike_not_near_True                                    0.617250   
+min_put_wall_strike_low_vs_hist_True                                 -0.172857   
+min_put_wall_strike_high_vs_hist_True                                 0.172880   
+min_put_wall_strike_not_near_True                                    -0.087980   
+call_wall_compression_True                                           -0.396702   
+put_wall_compression_True                                            -0.036402   
+short_gamma_expansion_True                                            0.236645   
+gamma_valley_True                                                    -0.051561   
+wall_to_wall_compression_True                                         0.279460   
+
+                                        max_call_wall_strike_not_near_True  \
+trade_id                                                         -0.044698   
+signal                                                            0.003959   
+entry_cost                                                       -0.008494   
+exit_cost                                                         0.008481   
+pnl                                                               0.003368   
+label                                                             0.000861   
+net_gex                                                          -0.252410   
+z20_net_gex                                                      -0.213991   
+gamma_flip_strike                                                -0.043844   
+gamma_flip_strike_perc                                            0.312460   
+gamma_flip_strike_perc_exp_mean                                   0.039566   
+max_call_wall_strike                                             -0.041444   
+max_call_wall_strike_perc                                         0.631251   
+max_call_wall_strike_perc_exp_mean                                0.181079   
+min_put_wall_strike                                              -0.044009   
+min_put_wall_strike_perc                                          0.128813   
+min_put_wall_strike_perc_exp_mean                                -0.098590   
+trade_type_long                                                   0.015073   
+trade_type_short                                                 -0.015073   
+neutral_gex_True                                                  0.050842   
+gamma_flip_strike_low_vs_hist_True                               -0.260869   
+gamma_flip_strike_high_vs_hist_True                               0.260666   
+gamma_flip_strike_not_near_True                                   0.211287   
+max_call_wall_strike_low_vs_hist_True                            -0.617266   
+max_call_wall_strike_high_vs_hist_True                            0.617250   
+max_call_wall_strike_not_near_True                                1.000000   
+min_put_wall_strike_low_vs_hist_True                             -0.109667   
+min_put_wall_strike_high_vs_hist_True                             0.109650   
+min_put_wall_strike_not_near_True                                -0.072239   
+call_wall_compression_True                                       -0.495548   
+put_wall_compression_True                                        -0.116412   
+short_gamma_expansion_True                                        0.237590   
+gamma_valley_True                                                 0.073891   
+wall_to_wall_compression_True                                     0.154569   
+
+                                        min_put_wall_strike_low_vs_hist_True  \
+trade_id                                                           -0.027378   
+signal                                                              0.048201   
+entry_cost                                                         -0.013514   
+exit_cost                                                           0.013520   
+pnl                                                                -0.006083   
+label                                                              -0.007114   
+net_gex                                                             0.386830   
+z20_net_gex                                                         0.242763   
+gamma_flip_strike                                                  -0.028135   
+gamma_flip_strike_perc                                             -0.448333   
+gamma_flip_strike_perc_exp_mean                                     0.148202   
+max_call_wall_strike                                               -0.014374   
+max_call_wall_strike_perc                                          -0.144440   
+max_call_wall_strike_perc_exp_mean                                  0.077144   
+min_put_wall_strike                                                -0.041192   
+min_put_wall_strike_perc                                           -0.725790   
+min_put_wall_strike_perc_exp_mean                                   0.121548   
+trade_type_long                                                    -0.014614   
+trade_type_short                                                    0.014614   
+neutral_gex_True                                                    0.054734   
+gamma_flip_strike_low_vs_hist_True                                  0.486752   
+gamma_flip_strike_high_vs_hist_True                                -0.486735   
+gamma_flip_strike_not_near_True                                     0.132356   
+max_call_wall_strike_low_vs_hist_True                               0.172878   
+max_call_wall_strike_high_vs_hist_True                             -0.172857   
+max_call_wall_strike_not_near_True                                 -0.109667   
+min_put_wall_strike_low_vs_hist_True                                1.000000   
+min_put_wall_strike_high_vs_hist_True                              -0.999976   
+min_put_wall_strike_not_near_True                                   0.512964   
+call_wall_compression_True                                          0.226782   
+put_wall_compression_True                                          -0.266750   
+short_gamma_expansion_True                                         -0.247715   
+gamma_valley_True                                                   0.219640   
+wall_to_wall_compression_True                                       0.131740   
+
+                                        min_put_wall_strike_high_vs_hist_True  \
+trade_id                                                             0.027346   
+signal                                                              -0.048164   
+entry_cost                                                           0.013504   
+exit_cost                                                           -0.013510   
+pnl                                                                  0.006061   
+label                                                                0.007086   
+net_gex                                                             -0.386816   
+z20_net_gex                                                         -0.242763   
+gamma_flip_strike                                                    0.028135   
+gamma_flip_strike_perc                                               0.448333   
+gamma_flip_strike_perc_exp_mean                                     -0.148202   
+max_call_wall_strike                                                 0.014407   
+max_call_wall_strike_perc                                            0.144481   
+max_call_wall_strike_perc_exp_mean                                  -0.077144   
+min_put_wall_strike                                                  0.041224   
+min_put_wall_strike_perc                                             0.725829   
+min_put_wall_strike_perc_exp_mean                                   -0.121548   
+trade_type_long                                                      0.014592   
+trade_type_short                                                    -0.014592   
+neutral_gex_True                                                    -0.054720   
+gamma_flip_strike_low_vs_hist_True                                  -0.486726   
+gamma_flip_strike_high_vs_hist_True                                  0.486758   
+gamma_flip_strike_not_near_True                                     -0.132319   
+max_call_wall_strike_low_vs_hist_True                               -0.172853   
+max_call_wall_strike_high_vs_hist_True                               0.172880   
+max_call_wall_strike_not_near_True                                   0.109650   
+min_put_wall_strike_low_vs_hist_True                                -0.999976   
+min_put_wall_strike_high_vs_hist_True                                1.000000   
+min_put_wall_strike_not_near_True                                   -0.512977   
+call_wall_compression_True                                          -0.226763   
+put_wall_compression_True                                            0.266761   
+short_gamma_expansion_True                                           0.247726   
+gamma_valley_True                                                   -0.219632   
+wall_to_wall_compression_True                                       -0.131710   
+
+                                        min_put_wall_strike_not_near_True  \
+trade_id                                                        -0.039346   
+signal                                                           0.021391   
+entry_cost                                                      -0.017172   
+exit_cost                                                        0.017154   
+pnl                                                              0.001965   
+label                                                            0.003308   
+net_gex                                                          0.396216   
+z20_net_gex                                                      0.264208   
+gamma_flip_strike                                               -0.005230   
+gamma_flip_strike_perc                                          -0.329774   
+gamma_flip_strike_perc_exp_mean                                  0.037991   
+max_call_wall_strike                                             0.009111   
+max_call_wall_strike_perc                                       -0.013244   
+max_call_wall_strike_perc_exp_mean                               0.125546   
+min_put_wall_strike                                             -0.013689   
+min_put_wall_strike_perc                                        -0.606986   
+min_put_wall_strike_perc_exp_mean                               -0.095891   
+trade_type_long                                                 -0.015572   
+trade_type_short                                                 0.015572   
+neutral_gex_True                                                 0.058028   
+gamma_flip_strike_low_vs_hist_True                               0.387026   
+gamma_flip_strike_high_vs_hist_True                             -0.387196   
+gamma_flip_strike_not_near_True                                  0.026905   
+max_call_wall_strike_low_vs_hist_True                            0.087966   
+max_call_wall_strike_high_vs_hist_True                          -0.087980   
+max_call_wall_strike_not_near_True                              -0.072239   
+min_put_wall_strike_low_vs_hist_True                             0.512964   
+min_put_wall_strike_high_vs_hist_True                           -0.512977   
+min_put_wall_strike_not_near_True                                1.000000   
+call_wall_compression_True                                       0.201861   
+put_wall_compression_True                                       -0.140706   
+short_gamma_expansion_True                                      -0.192584   
+gamma_valley_True                                                0.152095   
+wall_to_wall_compression_True                                    0.171711   
+
+                                        call_wall_compression_True  \
+trade_id                                                  0.055542   
+signal                                                   -0.008150   
+entry_cost                                                0.054989   
+exit_cost                                                -0.054939   
+pnl                                                      -0.006014   
+label                                                    -0.007537   
+net_gex                                                   0.479851   
+z20_net_gex                                               0.281247   
+gamma_flip_strike                                         0.035336   
+gamma_flip_strike_perc                                   -0.432992   
+gamma_flip_strike_perc_exp_mean                          -0.040183   
+max_call_wall_strike                                      0.039236   
+max_call_wall_strike_perc                                -0.481705   
+max_call_wall_strike_perc_exp_mean                       -0.172460   
+min_put_wall_strike                                       0.039142   
+min_put_wall_strike_perc                                 -0.258604   
+min_put_wall_strike_perc_exp_mean                         0.066043   
+trade_type_long                                           0.048620   
+trade_type_short                                         -0.048620   
+neutral_gex_True                                          0.000886   
+gamma_flip_strike_low_vs_hist_True                        0.381360   
+gamma_flip_strike_high_vs_hist_True                      -0.381141   
+gamma_flip_strike_not_near_True                          -0.122745   
+max_call_wall_strike_low_vs_hist_True                     0.396720   
+max_call_wall_strike_high_vs_hist_True                   -0.396702   
+max_call_wall_strike_not_near_True                       -0.495548   
+min_put_wall_strike_low_vs_hist_True                      0.226782   
+min_put_wall_strike_high_vs_hist_True                    -0.226763   
+min_put_wall_strike_not_near_True                         0.201861   
+call_wall_compression_True                                1.000000   
+put_wall_compression_True                                 0.196239   
+short_gamma_expansion_True                               -0.345465   
+gamma_valley_True                                        -0.230549   
+wall_to_wall_compression_True                             0.033201   
+
+                                        put_wall_compression_True  \
+trade_id                                                 0.019628   
+signal                                                  -0.008839   
+entry_cost                                              -0.000197   
+exit_cost                                                0.000197   
+pnl                                                      0.012933   
+label                                                    0.005756   
+net_gex                                                  0.226355   
+z20_net_gex                                              0.084985   
+gamma_flip_strike                                       -0.037848   
+gamma_flip_strike_perc                                  -0.057209   
+gamma_flip_strike_perc_exp_mean                         -0.070066   
+max_call_wall_strike                                    -0.038424   
+max_call_wall_strike_perc                               -0.106569   
+max_call_wall_strike_perc_exp_mean                      -0.156592   
+min_put_wall_strike                                     -0.025506   
+min_put_wall_strike_perc                                 0.225094   
+min_put_wall_strike_perc_exp_mean                        0.057711   
+trade_type_long                                          0.000710   
+trade_type_short                                        -0.000710   
+neutral_gex_True                                         0.007596   
+gamma_flip_strike_low_vs_hist_True                       0.001922   
+gamma_flip_strike_high_vs_hist_True                     -0.001771   
+gamma_flip_strike_not_near_True                         -0.250679   
+max_call_wall_strike_low_vs_hist_True                    0.036415   
+max_call_wall_strike_high_vs_hist_True                  -0.036402   
+max_call_wall_strike_not_near_True                      -0.116412   
+min_put_wall_strike_low_vs_hist_True                    -0.266750   
+min_put_wall_strike_high_vs_hist_True                    0.266761   
+min_put_wall_strike_not_near_True                       -0.140706   
+call_wall_compression_True                               0.196239   
+put_wall_compression_True                                1.000000   
+short_gamma_expansion_True                              -0.239646   
+gamma_valley_True                                       -0.159930   
+wall_to_wall_compression_True                            0.067868   
+
+                                        short_gamma_expansion_True  \
+trade_id                                                  0.018378   
+signal                                                   -0.011390   
+entry_cost                                               -0.017134   
+exit_cost                                                 0.017105   
+pnl                                                       0.002244   
+label                                                     0.000639   
+net_gex                                                  -0.533351   
+z20_net_gex                                              -0.242297   
+gamma_flip_strike                                        -0.044682   
+gamma_flip_strike_perc                                    0.484334   
+gamma_flip_strike_perc_exp_mean                           0.037037   
+max_call_wall_strike                                     -0.057300   
+max_call_wall_strike_perc                                 0.293729   
+max_call_wall_strike_perc_exp_mean                        0.098984   
+min_put_wall_strike                                      -0.051925   
+min_put_wall_strike_perc                                  0.298202   
+min_put_wall_strike_perc_exp_mean                        -0.046737   
+trade_type_long                                           0.009631   
+trade_type_short                                         -0.009631   
+neutral_gex_True                                         -0.034095   
+gamma_flip_strike_low_vs_hist_True                       -0.358677   
+gamma_flip_strike_high_vs_hist_True                       0.358807   
+gamma_flip_strike_not_near_True                           0.262061   
+max_call_wall_strike_low_vs_hist_True                    -0.236634   
+max_call_wall_strike_high_vs_hist_True                    0.236645   
+max_call_wall_strike_not_near_True                        0.237590   
+min_put_wall_strike_low_vs_hist_True                     -0.247715   
+min_put_wall_strike_high_vs_hist_True                     0.247726   
+min_put_wall_strike_not_near_True                        -0.192584   
+call_wall_compression_True                               -0.345465   
+put_wall_compression_True                                -0.239646   
+short_gamma_expansion_True                                1.000000   
+gamma_valley_True                                        -0.068656   
+wall_to_wall_compression_True                            -0.093804   
+
+                                        gamma_valley_True  \
+trade_id                                        -0.042467   
+signal                                           0.046604   
+entry_cost                                      -0.023285   
+exit_cost                                        0.023240   
+pnl                                              0.004045   
+label                                            0.004166   
+net_gex                                          0.170009   
+z20_net_gex                                      0.064374   
+gamma_flip_strike                               -0.079634   
+gamma_flip_strike_perc                          -0.343247   
+gamma_flip_strike_perc_exp_mean                 -0.017205   
+max_call_wall_strike                            -0.065460   
+max_call_wall_strike_perc                       -0.063472   
+max_call_wall_strike_perc_exp_mean               0.085409   
+min_put_wall_strike                             -0.077270   
+min_put_wall_strike_perc                        -0.286789   
+min_put_wall_strike_perc_exp_mean               -0.135427   
+trade_type_long                                 -0.018660   
+trade_type_short                                 0.018660   
+neutral_gex_True                                 0.019033   
+gamma_flip_strike_low_vs_hist_True               0.249259   
+gamma_flip_strike_high_vs_hist_True             -0.249172   
+gamma_flip_strike_not_near_True                  0.128673   
+max_call_wall_strike_low_vs_hist_True            0.051568   
+max_call_wall_strike_high_vs_hist_True          -0.051561   
+max_call_wall_strike_not_near_True               0.073891   
+min_put_wall_strike_low_vs_hist_True             0.219640   
+min_put_wall_strike_high_vs_hist_True           -0.219632   
+min_put_wall_strike_not_near_True                0.152095   
+call_wall_compression_True                      -0.230549   
+put_wall_compression_True                       -0.159930   
+short_gamma_expansion_True                      -0.068656   
+gamma_valley_True                                1.000000   
+wall_to_wall_compression_True                   -0.093651   
+
+                                        wall_to_wall_compression_True  
+trade_id                                                    -0.014036  
+signal                                                       0.036541  
+entry_cost                                                   0.043124  
+exit_cost                                                   -0.043109  
+pnl                                                         -0.006149  
+label                                                        0.003089  
+net_gex                                                      0.036237  
+z20_net_gex                                                  0.011366  
+gamma_flip_strike                                            0.016881  
+gamma_flip_strike_perc                                      -0.051900  
+gamma_flip_strike_perc_exp_mean                             -0.067537  
+max_call_wall_strike                                         0.028534  
+max_call_wall_strike_perc                                    0.306556  
+max_call_wall_strike_perc_exp_mean                          -0.018939  
+min_put_wall_strike                                          0.013393  
+min_put_wall_strike_perc                                    -0.294700  
+min_put_wall_strike_perc_exp_mean                           -0.086595  
+trade_type_long                                              0.066353  
+trade_type_short                                            -0.066353  
+neutral_gex_True                                             0.053763  
+gamma_flip_strike_low_vs_hist_True                          -0.011723  
+gamma_flip_strike_high_vs_hist_True                          0.011683  
+gamma_flip_strike_not_near_True                             -0.077285  
+max_call_wall_strike_low_vs_hist_True                       -0.279430  
+max_call_wall_strike_high_vs_hist_True                       0.279460  
+max_call_wall_strike_not_near_True                           0.154569  
+min_put_wall_strike_low_vs_hist_True                         0.131740  
+min_put_wall_strike_high_vs_hist_True                       -0.131710  
+min_put_wall_strike_not_near_True                            0.171711  
+call_wall_compression_True                                   0.033201  
+put_wall_compression_True                                    0.067868  
+short_gamma_expansion_True                                  -0.093804  
+gamma_valley_True                                           -0.093651  
+wall_to_wall_compression_True                                1.000000  
+
+[34 rows x 34 columns]
+
+Variance Detection
+------------------------------------------------------------
+gamma_valley_True                         7.753116e-02
+short_gamma_expansion_True                1.424456e-01
+put_wall_compression_True                 1.696506e-01
+neutral_gex_True                          1.873107e-01
+min_put_wall_strike_not_near_True         1.925754e-01
+gamma_flip_strike_not_near_True           2.096082e-01
+max_call_wall_strike_not_near_True        2.215334e-01
+call_wall_compression_True                2.317288e-01
+wall_to_wall_compression_True             2.404299e-01
+label                                     2.446715e-01
+trade_type_long                           2.466221e-01
+trade_type_short                          2.466221e-01
+min_put_wall_strike_low_vs_hist_True      2.468330e-01
+min_put_wall_strike_high_vs_hist_True     2.468343e-01
+max_call_wall_strike_high_vs_hist_True    2.495864e-01
+max_call_wall_strike_low_vs_hist_True     2.495869e-01
+gamma_flip_strike_low_vs_hist_True        2.499910e-01
+gamma_flip_strike_high_vs_hist_True       2.499920e-01
+min_put_wall_strike_perc                  1.585219e+00
+z20_net_gex                               1.591366e+00
+gamma_flip_strike_perc                    1.655467e+00
+max_call_wall_strike_perc                 1.775504e+00
+min_put_wall_strike_perc_exp_mean         2.211343e+00
+gamma_flip_strike_perc_exp_mean           2.330265e+00
+max_call_wall_strike_perc_exp_mean        2.461023e+00
+pnl                                       1.616730e+01
+signal                                    1.345620e+05
+gamma_flip_strike                         3.009095e+05
+min_put_wall_strike                       3.015326e+05
+max_call_wall_strike                      3.201574e+05
+entry_cost                                3.986195e+05
+exit_cost                                 3.987189e+05
+trade_id                                  1.572794e+08
+net_gex                                   4.355505e+15
+dtype: float64
