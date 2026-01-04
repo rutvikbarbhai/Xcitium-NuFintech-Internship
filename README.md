@@ -4,7 +4,7 @@
 ## <img src="https://github.com/user-attachments/assets/f03f321f-8340-452b-b82a-33f487bb52a4" width="28" style="vertical-align: text-bottom;"/> MODULE 1: FEATURE ENGINEERING & SELECTION
 
 ### <img src="https://github.com/user-attachments/assets/6672ee8c-15ed-4fb5-9cd5-63c04ac747c1" height="20px" style="vertical-align:bottom;"> Working:
-Three-stage feature reduction process applied to prevent data leakage and optimize model performance:  
+Four-stage feature reduction process applied to prevent data leakage and optimize model performance:  
 
 - 1️⃣ Analyzed **190 raw features** for redundancy via correlation analysis, low-variance detection, and one-hot group identification.
 - 2️⃣ Performed **80/20 stratified train-test split BEFORE any feature engineering** to ensure zero information leakage, created target-encoded features using only training data statistics.
