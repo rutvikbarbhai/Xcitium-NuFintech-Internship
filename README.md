@@ -6,10 +6,10 @@
 ### <img src="https://github.com/user-attachments/assets/6672ee8c-15ed-4fb5-9cd5-63c04ac747c1" height="20px" style="vertical-align:bottom;"> Working:
 Three-stage feature reduction process applied to prevent data leakage and optimize model performance:  
 
-1️⃣ Analyzed **190 raw features** for redundancy via correlation analysis, low-variance detection, and one-hot group identification.
-2️⃣ Performed **80/20 stratified train-test split BEFORE any feature engineering** to ensure zero information leakage, created target-encoded features using only training data statistics.
-3️⃣ Reduced features from **81 to 50** through time-window consolidation (kept 5d, dropped other variants), domain-based filtering with Random Forest importance verification, and final importance-based ranking.
-4️⃣ Validated that feature reduction maintained test performance while reducing overfitting.
+- 1️⃣ Analyzed **190 raw features** for redundancy via correlation analysis, low-variance detection, and one-hot group identification.
+- 2️⃣ Performed **80/20 stratified train-test split BEFORE any feature engineering** to ensure zero information leakage, created target-encoded features using only training data statistics.
+- 3️⃣ Reduced features from **81 to 50** through time-window consolidation (kept 5d, dropped other variants), domain-based filtering with Random Forest importance verification, and final importance-based ranking.
+- 4️⃣ Validated that feature reduction maintained test performance while reducing overfitting.
 
 ### 📦 Output Files:
 
@@ -94,9 +94,9 @@ Calculated signal strength scores (0–10) based on confidence and sample size, 
 ### <img src="https://github.com/user-attachments/assets/6672ee8c-15ed-4fb5-9cd5-63c04ac747c1" height="20px" style="vertical-align:bottom;">  Working:
 Applied rigorous multi-period validation to **42 actionable patterns** through three stages:  
 
-1️⃣ Backtest validation on **20% held-out test set** measuring out-of-sample accuracy per cluster.  
-2️⃣ Walk-forward validation testing each pattern across **5 independent time periods** to assess temporal stability via mean accuracy, standard deviation, and coefficient of variation. 
-3️⃣ Comprehensive quality analysis calculating reliability scores (0–100) based on sample size adequacy, stability, accuracy consistency, and train-test degradation, then filtering for patterns with **reliability ≥70** and no critical issues, resulting in **16 production-quality patterns**.
+- 1️⃣ Backtest validation on **20% held-out test set** measuring out-of-sample accuracy per cluster.  
+- 2️⃣ Walk-forward validation testing each pattern across **5 independent time periods** to assess temporal stability via mean accuracy, standard deviation, and coefficient of variation. 
+- 3️⃣ Comprehensive quality analysis calculating reliability scores (0–100) based on sample size adequacy, stability, accuracy consistency, and train-test degradation, then filtering for patterns with **reliability ≥70** and no critical issues, resulting in **16 production-quality patterns**.
 
 ### 📦 Output Files:
 
