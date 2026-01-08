@@ -1,0 +1,4 @@
+,value
+n_samples,2000
+n_features,40
+auc_train,0.67613113
